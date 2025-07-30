@@ -9,7 +9,8 @@ public class main {
         System.out.print("Qual a sua idade? ");
         int idade = teclado.nextInt();
         System.out.print("Qual a sua cor favorita? ");
-        String cor = teclado.nextLine();
-        System.out.printf("");
+        String cor = teclado.next();
+        System.out.printf("Olá %s, de %d anos, que tem a cor favorita %s \n", nome, idade, cor);
+        teclado.close();
     }
 }
