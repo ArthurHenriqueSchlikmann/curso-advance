@@ -8,8 +8,8 @@ public class main {
         System.out.print("Digite o capital inicial da aplicação: ");
         double capitalInicial = teclado.nextDouble();
         // Solicita a taxa de juros ao usuário
-        System.out.print("Digite a taxa de juros (em decimal, exemplo: 0.05 para 5%): ");
-        double taxaJuros = teclado.nextDouble();
+        System.out.print("Digite a taxa de juros: ");
+        double taxaJuros = teclado.nextDouble() / 100;
         // Solicita o tempo de aplicação ao usuário
         System.out.print("Digite o tempo de aplicação (em anos): ");
         int tempo = teclado.nextInt();
