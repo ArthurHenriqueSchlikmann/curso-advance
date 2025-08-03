@@ -1,4 +1,4 @@
-exercicio = input('Qual é o exercício que você quer ver? ')
+exercicio = input('Qual é o exercício que você quer ver? DESAFIO = 6, EXERCÍCIO = 1, 2, 3, 4, 5: ')
 #Sei usar if e else, e botei todos os exercícios em um programa, daí escolhe o exercício que quer ver
 if exercicio == '1':
     nomes = ['Kauã', 'Anthony', 'Cenci', 'Erick', 'Guilherme', 'José', 'Matheus', 'Murilo', 'Nicolas', 'Arthur']
@@ -34,3 +34,6 @@ elif exercicio == '4':
 elif exercicio == '5':
     nomes = ['Kauã', 'Anthony', 'Cenci', 'Erick', 'Guilherme', 'José', 'Matheus', 'Murilo', 'Nicolas', 'Arthur']
     print(nomes[0].upper() , nomes[1].upper(), nomes[2].upper(), nomes[3].upper(), nomes[4].upper(), nomes[5].upper(), nomes[6].upper(), nomes[7].upper(), nomes[8].upper(), nomes[9].upper())
+elif exercicio == '6':
+    for i in range(499, 5001):
+        print(i)
