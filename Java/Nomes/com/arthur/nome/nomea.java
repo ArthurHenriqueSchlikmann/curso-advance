@@ -1,7 +1,7 @@
 package com.arthur.nome;
 import java.util.Scanner;
 
-public class main {
+public class nomea {
     public static void main(String[] args) {
         // Cria um objeto Scanner para ler a entrada do usuário
         Scanner teclado = new Scanner(System.in);
