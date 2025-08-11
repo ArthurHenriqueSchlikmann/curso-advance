@@ -1,7 +1,7 @@
 package com.arthur.nome;
 import java.util.Scanner;
 
-public class main {
+public class nomea {
     public static void main(String[] args) {
         // Cria um objeto Scanner para ler a entrada do usuário
         Scanner teclado = new Scanner(System.in);
@@ -15,7 +15,7 @@ public class main {
         // Verifica se a idade é maior que 150
         if(idade > 150) {
             // Se a idade for maior que 150, exibe uma mensagem de erro meme
-            System.out.println("Você já viveu demais, considere descansar LOL. :)");
+            System.out.println("Você já viveu demais, considere descansar LOL :)");
             teclado.close();
             System.err.println("Erro: Idade inválida.");
         } else {
