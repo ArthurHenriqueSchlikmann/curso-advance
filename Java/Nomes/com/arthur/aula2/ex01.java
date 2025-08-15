@@ -1,6 +1,5 @@
 package com.arthur.aula2;
 import java.util.Scanner;
-import com.arthur.aula2.Libex02;
 
 public class ex01 {
     public static void main(String[] args) {
