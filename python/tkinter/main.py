@@ -1,6 +1,7 @@
 import tkinter
 from tkinter import Frame
 from tkinter import Button
+from tkinter import Menu
 
 root = tkinter.Tk()
 
@@ -10,6 +11,7 @@ class app():
         self.tela()
         self.frames()
         self.botoes()
+        self.menus()
         self.root.mainloop()
     def tela(self):
         self.root.title("Nosso Software")
@@ -19,7 +21,7 @@ class app():
         self.frame1 = Frame(self.root, bg="#000000", bd=4)
         self.frame1.place(relx=0, rely=0, relwidth=1, relheight=1)
     def botoes(self):
-        self.botao1 = Button(self.frame1, text="Botão", command=self.commands, bg="#ffffff")
+        self.botao1 = Button(self.frame1, text="Botão", command=self.commands, bg="#ffffff", bd=3)
         self.botao1.place(relx=0.3, rely=0.5, relheight=0.05, relwidth=0.1)
     def commands(self):
         self.ola = tkinter.Tk()
@@ -27,4 +29,9 @@ class app():
         self.ola.title("Olá, Tudo bem?")
         self.frameola = Frame(self.ola, bg="#aaaaaa", background="#aaaaaa")
         self.frameola.place(relx=0, rely=0, relwidth=1, relheight=1)
+    def menus(self):
+        menubar = Menu(self.root)
+        self.root.config(menu=menubar)
+        filemenu1 = Menu(menubar)
+        menubar.add_cascade(label="Arquivo", menu=filemenu1)
 app()
