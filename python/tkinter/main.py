@@ -19,6 +19,12 @@ class app():
         self.frame1 = Frame(self.root, bg="#000000", bd=4)
         self.frame1.place(relx=0, rely=0, relwidth=1, relheight=1)
     def botoes(self):
-        self.botao1 = Button(self.frame1, text="Botão", command=None, bg="#ffffff")
-        self.botao1.place(relx=0.03, rely=0.05, relheight=0.01, relwidth=0.01)
+        self.botao1 = Button(self.frame1, text="Botão", command=self.commands, bg="#ffffff")
+        self.botao1.place(relx=0.3, rely=0.5, relheight=0.05, relwidth=0.1)
+    def commands(self):
+        self.ola = tkinter.Tk()
+        self.ola.geometry("200x100")
+        self.ola.title("Olá, Tudo bem?")
+        self.frameola = Frame(self.ola, bg="#aaaaaa", background="#aaaaaa")
+        self.frameola.place(relx=0, rely=0, relwidth=1, relheight=1)
 app()
